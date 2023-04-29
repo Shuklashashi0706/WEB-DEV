@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initinalize the container as flex box */
+            display: flex;
+            /* flex properties for flex container */
+            /* flex-direction:row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            /* if u want to give both reverse and wrap properties simultaneously then u can use flex-flow: ; */
+            /* flex-flow: row wrap;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;            
+            justify-content: space-around;
+            align-items: center; */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 3px solid red;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        /* flex properties for flex item: */
+        #item1 {
+            /* highest order are put at the last position */
+            /* order:1; */
+            /* fle-grow is use to incr the size wrt others */
+            /* flex-grow: 3; */
+           
+        }
+
+        #item2 {
+            /* order: 30; */
+            /* flex-grow: 2; */
+            /* flex-shrink i suse to decr the size wrt others  */
+            /* flex-shrink:3; */
+            flex-basis:320px;
+            /* when flexdirection is set to row ,flex basis is considered as width */
+            /* when flexdirection is set to column ,flex basis is considered as height */
+        }
+
+        #item3 {
+            /* flex is shorthand for grow,shrink and basis */
+            flex: 2 3 320px; 
+            align-self: flex-start;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is flexbox tutorial</h3>
+    <div class="container">
+        <div class="item" id="item1">item1</div>
+        <div class="item" id="item2">item2</div>
+        <div class="item" id="item3">item3</div>
+        <!-- <div class="item" id="item4">item4</div>
+        <div class="item" id="item5">item5</div>
+        <div class="item" id="item6">item6</div> -->
+    </div>
+</body>
+
+</html>

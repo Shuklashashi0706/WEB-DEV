@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="manifest" href="Images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/faae579ca4.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio website-1</title>
+</head>
+
+<body>
+    <div id="head">
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="head-text">
+                <p>Web Developer</p>
+                <h1>Hi,I am <span>Your Name</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, modi! Omnis minima nesciunt ea
+                        odit excepturi placeat necessitatibus harum, nam nihil quos officiis temporibus ipsam voluptate
+                        beatae eius repellendus provident incidunt quam? Aspernatur, distinctio praesentium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex modi repudiandae! Rem
+                        autem corrupti possimus facere delectus quasi impedit aliquid cum earum aspernatur beatae alias
+                        ut assumenda, et architecto eum unde totam. Minus, illo.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="table-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web dev</span><br>Designing Frontend</li>
+                            <li><span>Web dev</span><br>Designing Frontend</li>
+                            <li><span>Web dev</span><br>Designing Frontend</li>
+                        </ul>
+                    </div>
+                    <div class="table-content" id="experience">
+                        <ul>
+                            <li><span>2020-21</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+                                magni.</li>
+                            <li><span>2021-22</span><br>Designing Frontend</li>
+                            <li><span>2022-23</span><br>Designing Frontend</li>
+                        </ul>
+                    </div>
+                    <div class="table-content" id="education">
+                        <ul>
+                            <li><span>BTECH</span><br>Designing Frontend</li>
+                            <li><span>12 TH </span><br>Designing Frontend</li>
+                            <li><span>10TH</span><br>Designing Frontend</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------about section ends here -->
+
+    <!-- ----services section starts here------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code "></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi consequuntur error
+                        molestias nam saepe voluptates, delectus quis veritatis quisquam, natus, velit dolor sunt vitae
+                        porro nesciunt dolore perferendis. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi consequuntur error
+                        molestias nam saepe voluptates, delectus quis veritatis quisquam, natus, velit dolor sunt vitae
+                        porro nesciunt dolore perferendis. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi consequuntur error
+                        molestias nam saepe voluptates, delectus quis veritatis quisquam, natus, velit dolor sunt vitae
+                        porro nesciunt dolore perferendis. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------service section ends here-------- -->
+
+    <!-- --------portfolio section starts here---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</p>
+                        <a href="#"><i class="fa-solid fa-terminal"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</p>
+                        <a href="#"><i class="fa-solid fa-terminal"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quisquam.</p>
+                        <a href="#"><i class="fa-solid fa-terminal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" >See More</a>
+        </div>
+    </div>
+    <!-- --------portfolio section ends here---------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("table-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>

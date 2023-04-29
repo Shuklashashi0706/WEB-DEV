@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+    </div>
+    <script>
+        //walking the dom is just like accessing tree nodes
+        let body = document.body;
+        console.log(body.previousElementSibling);//gives head as they are in the same level of tree
+        console.log(body.nextSibling);//gives null as there is nothing after body
+        //accessing last child of ul
+        body = document.body.childNodes;
+        console.log(body?.firstChild?.firstChild?.lastChild);
+        
+    </script>
+</body>
+
+</html>
+<!-- 
+Summary
+Given a DOM node, we can go to its immediate neighbors using navigation properties.
+
+There are two main sets of them:
+
+For all nodes: parentNode, childNodes, firstChild, lastChild, previousSibling, nextSibling.
+For element nodes only: parentElement, children, firstElementChild, lastElementChild, previousElementSibling, nextElementSibling.
+Some types of DOM elements, e.g. tables, provide additional properties and collections to access their content. -->

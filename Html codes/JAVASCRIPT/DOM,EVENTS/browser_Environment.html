@@ -1,0 +1,67 @@
+<!-- //Dom means Document Object model which basically says that js reads html tags(<html>,<head>) as object
+//thus all objects knowledge can be used to access html tags
+//DOM tree:its a tree of html in <html> is root and other are its children -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>First child</li>
+            <li>Last child</li>
+        </ul>
+    </div>
+    <!-- whenever js reads html,it also considers whitespace as element -->
+    <script>
+        let script = document.body.childNodes; //here,every node of html inside body are stored inside the "collection" script
+        for (let i = 0; i < script.length; i++) {
+            console.log(script[i]);
+        }
+        //produces output as 
+        //#text div comment script
+        //as we can see it also reads comment of html
+        script = document.body.children;
+        let n = document.body.childElementCount;
+        console.log(n);//gives no of child elements "2" as it ignores text and comments ,reads only main content
+        for (let i = 0; i < n;i++){
+            console.log(script[i]); //gives output of div then script 
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- DOM specification
+Describes the document structure, manipulations, and events, see https://dom.spec.whatwg.org.
+CSSOM specification
+Describes stylesheets and style rules, manipulations with them, and their binding to documents, see https://www.w3.org/TR/cssom-1/.
+HTML specification
+Describes the HTML language (e.g. tags) and also the BOM (browser object model) – various browser functions: setTimeout, alert, location and so on, see https://html.spec.whatwg.org. It takes the DOM specification and extends it with many additional properties and methods.
+Additionally, some classes are described separately at https://spec.whatwg.org/.
+
+Please note these links, as there’s so much to learn that it’s impossible to cover everything and remember it all.
+
+When you’d like to read about a property or a method, the Mozilla manual at https://developer.mozilla.org/en-US/ is also a nice resource, but the corresponding spec may be better: it’s more complex and longer to read, but will make your fundamental knowledge sound and complete.
+
+To find something, it’s often convenient to use an internet search “WHATWG [term]” or “MDN [term]”, e.g https://google.com?q=whatwg+localstorage, https://google.com?q=mdn+localstorage.
+
+Now, we’ll get down to learning the DOM, because the document plays the central role in the UI.
+
+An HTML/XML document is represented inside the browser as the DOM tree.
+
+Tags become element nodes and form the structure.
+Text becomes text nodes.
+…etc, everything in HTML has its place in DOM, even comments.
+We can use developer tools to inspect DOM and modify it manually.
+
+Here we covered the basics, the most used and important actions to start with. There’s an extensive documentation about Chrome Developer Tools at https://developers.google.com/web/tools/chrome-devtools. The best way to learn the tools is to click here and there, read menus: most options are obvious. Later, when you know them in general, read the docs and pick up the rest.
+
+DOM nodes have properties and methods that allow us to travel between them, modify them, move around the page, and more. We’ll get down to them in the next chapters. -->

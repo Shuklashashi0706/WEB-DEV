@@ -1,0 +1,52 @@
+<!-- //here,we will learn how to access elements uding id or class -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="id">
+        <div id="elem">
+            Element
+        </div>
+        <ul>
+            <li>first</li>
+            <li>first_last</li>
+        </ul>
+        <ul>
+            <li>second</li>
+            <li>second_last</li>
+        </ul>
+    </div>
+    <script>
+        let id = document.getElementById("id"); //to access elements with id "id"
+        id.style.background = "red";
+        console.log(document.getElementById("id"));
+        console.log(document.getElementById("elem"));
+        elem.style.background = "yellow";//directly accessing using id "elem"
+        //elem has the reference to div of id elem
+        //if elem is declared inside the script then it will lose its reference
+
+        //using querySelectorAll(css) return all elements matching given css selector
+        let elements = document.querySelectorAll('ul > li:last-child');
+        for (let el of elements) {
+            alert(el.innerHTML);
+        }
+//         The call to elem.querySelector(css) returns the first element for the given CSS selector.
+
+// In other words, the result is the same as elem.querySelectorAll(css)[0], but the latter is looking for all elements and picking one, while elem.querySelector just looks for one.So it’s faster and also shorter to write.
+    </script>
+</body>
+
+</html>
+<!-- Important:
+    So here we cover them mainly for completeness, while you can still find them in the old scripts.
+
+elem.getElementsByTagName(tag) looks for elements with the given tag and returns the collection of them. The tag parameter can also be a star "*" for “any tags”.
+elem.getElementsByClassName(className) returns elements that have the given CSS class.
+document.getElementsByName(name) returns elements with the given name attribute, document-wide. Very rarely used. -->

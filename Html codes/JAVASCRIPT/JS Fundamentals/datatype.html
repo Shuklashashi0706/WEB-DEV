@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type</title>
+</head>
+
+<body>
+    <script>
+        //Js is dynamically typed which means variable can be changed from int to string
+        //numbers
+        let num = 23;//int
+        num = 23.45;//float
+        //string
+        //3 typ3: "" & '' & ` string ${variable}` 
+        //`` this one is use to embed variable in a string 
+        let str = "Shashi";
+        str = 'shashi';
+        let age = 21;
+        alert(`${str}age is ${age}`);
+        //${} we can put anything inside it like expreesion ex 2+2 or variable
+        //boolean (true or false)
+        let boo = 4 > 1;
+        boo = 4 < 1;
+        alert(boo);
+        //null 
+        //it does not refer to anything ..
+        age = null;
+        alert(`${age}`);
+        //typeof is an operator which returns the dataype
+        let type = true;
+        alert(typeof (type));
+
+    </script>
+</body>
+
+</html>
+<!-- Summary
+There are 8 basic data types in JavaScript.
+
+Seven primitive data types:
+number for numbers of any kind: integer or floating-point, integers are limited by ±(2^53-1).
+bigint for integer numbers of arbitrary length.
+string for strings. A string may have zero or more characters, there’s no separate single-character type.
+boolean for true/false.
+null for unknown values – a standalone type that has a single value null.
+undefined for unassigned values – a standalone type that has a single value undefined.
+symbol for unique identifiers.
+And one non-primitive data type:
+object for more complex data structures.
+The typeof operator allows us to see which type is stored in a variable.
+
+Usually used as typeof x, but typeof(x) is also possible.
+Returns a string with the name of the type, like "string".
+For null returns "object" – this is an error in the language, it’s not actually an object.
+In the next chapters, we’ll concentrate on primitive values and once we’re familiar with them, we’ll move on to objects. -->

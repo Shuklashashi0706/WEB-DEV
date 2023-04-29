@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color:aquamarine;
+            color: black;
+            text-align: center;
+        }
+        /* div  p{
+            background-color: bisque;
+            color: blue;
+        } */
+        /* >means only para which are direct child of div get affected*/
+        /* div > p  { 
+            background-color: bisque;
+            color: blue;
+        } */
+        /* Here + means para just after div will get affected */
+        div + p  { 
+            background-color: bisque;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <div class="container">
+        <div>
+            <ul>
+                <li><p>This is lis tparagrap</p></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

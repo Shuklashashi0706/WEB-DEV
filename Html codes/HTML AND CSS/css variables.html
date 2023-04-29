@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables/custom properties</title>
+    <style>
+        /* by using root u can use variable as a global variable */
+        :root{
+            --border-color:black;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--border-color);
+        }
+        .item{
+            /* variable name is given by putting '--' before the word */
+            /* the variable put in one function can be used under that function only */
+            --box-color:rgb(233, 22, 205);
+            border:2px solid black;
+            background-color:var(--box-color) ;
+            margin:2px 3px;
+            width:200px;
+            height:300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+</body>
+</html>

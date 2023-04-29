@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID ROW</title>
+    <style>
+        .grid{
+            display:grid;
+            /* fr means fractions */
+            grid-template-rows: 1fr 4fr 1fr; 
+            grid-template-columns: 2fr 2fr;
+            grid-gap:2rem;
+        }
+        .box{
+            background-color: antiquewhite;
+            border: 2px solid red;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">this is item-1</div>
+        <div class="box">this is item-2</div>
+        <div class="box">this is item-3</div>
+        <div class="box">this is item-4</div>
+        <div class="box">this is item-5</div>
+        <div class="box">this is item-6</div>
+        <div class="box">this is item-7</div>
+        <div class="box">this is item-8</div>
+        <div class="box">this is item-9</div>
+    </div>
+</body>
+</html>

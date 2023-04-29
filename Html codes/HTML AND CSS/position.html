@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            background-color: khaki;
+            height: 1000px;
+            ;
+        }
+
+        /* CSS position:static(desault),absolute,relative,fixed,sticky */
+        .box {
+            display: inline-block;
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+
+        }
+
+        #box3 {
+            /* relative:relative to its normal position and will leave the gap at its normal position*/
+
+            /* absolute:absolute to the first of its position*/
+            /*fixed:position related to the browser window 
+            position:fixed;
+            right:50px;
+            bottom: 3px;; */
+            position: relative;
+
+        }
+
+        #box2 {
+            position: sticky;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

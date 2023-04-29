@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Accumulator(startvalue){
+            this.value=startvalue;
+           this.read=function(){
+            this.uservalue=+prompt("Enter value:");
+            this.value+=this.uservalue;
+           }
+        }
+        let user=new Accumulator(1);
+        user.read();
+        user.read();
+        alert(user.value);
+         </script>
+</body>
+</html>
+<!-- 
+Create a constructor function Accumulator(startingValue).
+
+Object that it creates should:
+
+Store the “current value” in the property value. The starting value is set to the argument of the constructor startingValue.
+The read() method should use prompt to read a new number and add it to value.
+In other words, the value property is the sum of all user-entered values with the initial value startingValue.  -->

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Fasthand&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: black;
+            color: white;
+        }
+        /* Very important use of before selector  */
+        header::before{
+            background: url('https://images.unsplash.com/photo-1667429678289-806b4ac50292?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80') no-repeat center center/cover;
+            content: "";
+            height: 100%;
+            width: 100%;
+            position:absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+           
+            
+        }
+        .navigation{
+            font-size: 20px;
+            display:flex;
+            flex-direction: row;
+            margin:2px 2px;
+            background-color:grey;
+                     
+        }
+        li{
+            list-style: none;
+            padding: 22px 72px;
+            font-size:1.5em;
+            
+            /* background-color: grey;
+            border-radius: 95px; */
+        }
+        li:hover{
+            background-color:darkgrey;
+            color: black;
+
+        }
+        section{
+            
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            margin:67px 146px;
+            align-items: center;
+            justify-content: center;
+        }
+        p{  font-size: 1.5em;
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        /* section::before{
+            content: 'this is content';
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis corrupti ratione officia, et ipsam officiis asperiores placeat? At commodi magnam, quaerat sunt nisi ad officiis eos fuga asperiores sequi. Cum.</p>
+    </section>
+    <hr>
+</body>
+</html>
